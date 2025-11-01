@@ -1,0 +1,7 @@
+{
+  "name": "Birthday Adventure for Jyothsna",
+  "description": "A 5-level interactive puzzle game created as a special birthday surprise, culminating in a heartfelt message and photo gallery.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -4,7 +4,7 @@ import { LevelProps } from '../../types';
 const GRID_SIZE = 3;
 const TILE_COUNT = GRID_SIZE * GRID_SIZE;
 const CORRECT_ORDER = Array.from({ length: TILE_COUNT }, (_, i) => i);
-const IMAGE_URL = '../../images/level1/puzzle.jpg';
+const IMAGE_URL = 'https://i.ibb.co/jPsvFWf7/level1.jpg';
 
 const shuffle = (array: number[]) => {
     let currentIndex = array.length, randomIndex;

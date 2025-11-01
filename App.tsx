@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { GameState } from './types';
 import ProgressBar from './components/ProgressBar';
 import LandingScreen from './components/levels/LandingScreen';
@@ -21,22 +21,6 @@ const App: React.FC = () => {
     level5: useRef<HTMLDivElement>(null),
     letter: useRef<HTMLDivElement>(null),
   };
-
-  useEffect(() => {
-    // Request audio permissions at the start of the app
-    navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(stream => {
-            console.log('Microphone permission granted.');
-            // Stop the tracks to release the microphone immediately
-            stream.getTracks().forEach(track => track.stop());
-        })
-        .catch(err => {
-            console.error('Microphone permission denied.', err);
-            // Handle cases where the user denies permission, if necessary.
-            // For now, the app can proceed without it.
-        });
-  }, []); // Empty dependency array ensures this runs only once on mount
-
 
   const handleLevelComplete = (level: number) => {
     if (completedLevels < level) {

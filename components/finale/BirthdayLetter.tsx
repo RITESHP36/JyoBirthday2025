@@ -36,12 +36,12 @@ const BirthdayLetter: React.FC = () => {
 
 
     const photos = [
-        { src: './images/gallery/gallery1.jpg', caption: "" },
-        { src: './images/gallery/gallery2.jpg', caption: "" },
-        { src: './images/gallery/gallery3.jpg', caption: "" },
-        { src: './images/gallery/gallery4.jpg', caption: "" },
-        { src: './images/gallery/gallery5.jpg', caption: "" },
-        { src: './images/gallery/gallery6.jpg', caption: "" },
+        { src: 'https://i.ibb.co/4nMckMcN/gallery1.jpg', caption: "" },
+        { src: 'https://i.ibb.co/fY3FD5XX/gallery2.jpg', caption: "" },
+        { src: 'https://i.ibb.co/fYvfBFvS/gallery3.jpg', caption: "" },
+        { src: 'https://i.ibb.co/1tkBPDjq/gallery4.jpg', caption: "" },
+        { src: 'https://i.ibb.co/4w4dHC6w/gallery5.jpg', caption: "" },
+        { src: 'https://i.ibb.co/G4mMVC3h/gallery6.jpg', caption: "" },
     ];
     
     return (

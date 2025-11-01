@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { LevelProps } from '../../types';
 import { ACROSTIC_PARAGRAPH } from '../../constants';
 
@@ -23,6 +23,10 @@ const Level5: React.FC<LevelProps> = ({ onComplete, isLocked }) => {
             setIsWrong(true);
         }
     };
+    
+    // Reverse the array to display sentences from A -> J as requested
+    const sentencesInOrder = ACROSTIC_PARAGRAPH.slice().reverse();
+    const paragraphText = sentencesInOrder.map(item => item.sentence).join(' ') + " Use the first letter of each sentence, in reverse order, to unlock the final level.";
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4 text-center">
@@ -30,16 +34,8 @@ const Level5: React.FC<LevelProps> = ({ onComplete, isLocked }) => {
                 <h2 className="text-3xl font-bold mb-2">Level 5: The Final Key</h2>
                 <p className="mb-6 text-slate-300">Read this paragraph carefully to find the key.</p>
 
-                <div className="text-left space-y-3 bg-black/30 p-4 rounded-lg text-slate-300">
-                    {ACROSTIC_PARAGRAPH.slice().reverse().map((item, index) => (
-                        <p key={index}>
-                            <span className={`font-bold text-lg transition-colors duration-500 ${isCorrect ? 'text-fuchsia-400' : 'text-slate-100'}`} style={{ transitionDelay: isCorrect ? `${index * 100}ms` : '0ms' }}>
-                                {item.letter}
-                            </span>
-                            {item.sentence.substring(1)}
-                        </p>
-                    ))}
-                     <p className="pt-4 text-fuchsia-400 font-semibold">Use the first letter of each sentence, in reverse order, to unlock the final level.</p>
+                <div className="text-left bg-black/30 p-4 rounded-lg text-slate-300">
+                   <p>{paragraphText}</p>
                 </div>
                 
                 {!isCorrect && (

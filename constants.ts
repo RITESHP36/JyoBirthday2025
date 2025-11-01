@@ -46,12 +46,12 @@ export const PHOTOS: Photo[] = [
 ];
 
 export const ACROSTIC_PARAGRAPH = [
-    { letter: 'A', sentence: "Absolutely stunning inside and out, you light up every room you enter." },
-    { letter: 'N', sentence: "Nothing can break your spirit - your strength inspires everyone around you." },
-    { letter: 'S', sentence: "So brave in facing challenges, you tackle everything with grace and determination." },
-    { letter: 'H', sentence: "How do you manage to be both fierce and gentle at the same time?" },
-    { letter: 'T', sentence: "True beauty radiates from your kind heart and caring soul." },
-    { letter: 'O', sentence: "Outstanding friend who always puts others before herself without hesitation." },
+    { letter: 'J', sentence: "Just thinking about your friendship fills my heart with so much gratitude." },
     { letter: 'Y', sentence: "Your courage in difficult times shows just how incredible you truly are." },
-    { letter: 'J', sentence: "Just thinking about your friendship fills my heart with so much gratitude." }
+    { letter: 'O', sentence: "Outstanding friend who always puts others before herself without hesitation." },
+    { letter: 'T', sentence: "True beauty radiates from your kind heart and caring soul." },
+    { letter: 'H', sentence: "How do you manage to be both fierce and gentle at the same time?" },
+    { letter: 'S', sentence: "So brave in facing challenges, you tackle everything with grace and determination." },
+    { letter: 'N', sentence: "Nothing can break your spirit - your strength inspires everyone around you." },
+    { letter: 'A', sentence: "Absolutely stunning inside and out, you light up every room you enter." }
 ];
